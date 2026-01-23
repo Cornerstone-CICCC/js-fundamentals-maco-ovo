@@ -40,25 +40,40 @@ For example, an output string may look like:
 Mr. Parkes did it in the dining room with the knife!
 */
 
-const room = "dining room";
+const room = "ballroom";
+let suspect = "Mr. Parkes";
 let weapon;
-let suspect;
+let solve;
 
 if (room === "ballroom") {
     weapon = "poison";
-    suspect = "Mr. Kalehoff";
+        if(suspect === "Mr. Kalehoff") {
+            solve = true;
+        }
 }
 else if (room === "gallery") {
     weapon = "trophy";
-    suspect = "Ms. Van Cleve";
+        if(suspect === "Ms. Van Cleve") {
+            solve = true;
+        }
 }
 else if (room === "billiards room") {
     weapon = "pool stick";
-    suspect = "Mrs. Sparr";
+        if(suspect === "Mrs. Sparr") {
+            solve = true;
+        }
 }
 else if (room === "dining room") {
     weapon = "knife";
-    suspect = "Mr. Parkes";
+        if(suspect === "Mr. Parkes") {
+            solve = true;
+        }
 }
 
-console.log(`${suspect} did it in the ${room} with the ${weapon}!`)
+
+if (solve === true) {
+    console.log(`${suspect} did it in the ${room} with the ${weapon}!`);
+}
+else {
+    console.log("the mystery is not solved yet.");
+}
