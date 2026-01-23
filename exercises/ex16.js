@@ -38,7 +38,7 @@ Think through the steps your code will need to take and write them down in order
 Then go through your list and convert each step into actual code. Good luck!
 */
 
-const makeLine = function (length) {
+function makeLine(length) {
     var line = "";
     for (var j = 1; j <= length; j++) {
       line += "* "
@@ -46,7 +46,7 @@ const makeLine = function (length) {
     return line + "\n";
 }
 
-const buildTriangle = function(width) {
+function buildTriangle(width) {
     let triangle = "";
     for (let i = 1; i <= width; i++) {
         triangle += makeLine(i);
